@@ -20,9 +20,9 @@ class DatesController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create() : View
     {
-        //
+        return view('create');
     }
 
     /**
@@ -30,7 +30,7 @@ class DatesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Date::create($request->all());
     }
 
     /**
