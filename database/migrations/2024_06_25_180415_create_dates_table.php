@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('equipo');
             $table->string('matricula');
             $table->string('comandante');
-            $table->string('licencia-comandante');
-            $table->string('sub-comandante');
-            $table->string('licencia-sub-comandante');
+            $table->string('licencia_comandante');
+            $table->string('sub_comandante');
+            $table->string('licencia_sub_comandante');
             $table->dateTime('due_date');
             $table->timestamps();
         });

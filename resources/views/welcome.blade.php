@@ -3,14 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>airport</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-
     </head>
     <body class="">
         <h1 class="text-red-700 text-lg" >Hello world</h1>
-
     </body>
 </html>

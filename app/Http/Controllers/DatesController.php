@@ -4,15 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\Date;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class DatesController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index() : View
     {
-        return view('index'); //el index es la vista que se va a renderizar  //asi se llama el archivo en views/index
+        $dates = Date::latest()->get();
+        return view('index', ['dates' => $dates ] ); //el index es la vista que se va a renderizar  //asi se llama el archivo en views/index
     }
 
     /**
